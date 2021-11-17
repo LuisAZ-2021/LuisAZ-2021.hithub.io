@@ -2,29 +2,69 @@
 <html lang="en">
   <head>
     
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
     <title>Acerca de Luis Angel Zarate</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
-    minium-scale=1.0">
+    minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-      <div class="contenedor">
+      <div class="contenedor" id="contenedor">
             <section class="tarjeta">
 
                 <section class="slider_banner">
-                    <div class="banner">
-                        <img class="slide" src="img/port1.jpg" alt="">
-                        <img class="slide" src="img/port2.jpg" alt="">
-                        <img class="slide" src="img/port3.jpg" alt="">
-                        <img class="slide" src="img/port4.jpg" alt="">
+                    
+                    <div class="banner" id="banner" >
+                        <img class="slide active" src="img/banner.jpg" alt="">
+                        <img class="slide" src="img/banner1.jpg" alt="">
+                        <img class="slide" src="img/banner2.jpg" alt="">
+                        <img class="slide" src="img/banner3.jpg" alt="">
                     </div>
-                </section>
-                <section class="slider_info"></section>
-                <section class="redes-sociales"></section>
 
+                    <a href="#" id="banner-prev" class="flecha-banner anterior"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" id="banner-next" class="flecha-banner siguiente"><i class="fas fa-angle-right"></i></a>
+                </section>
+                <section class="slider_info">
+                    <a href="#" id="info-prev" class="flecha-info anterior"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" id="info-next" class="flecha-info siguiente"><i class="fas fa-angle-right"></i></a>
+                    <section id="informacion" class="informacion">
+                        <article id="info">
+                            <div class="slide active">
+                                <h1 class="nombre">Luis Angel Zarate</h1>
+                                <p class="trabajo">Desarrollador Web</p>
+                                <p class="pais"><img src="img/bandera.png" alt="">Argentina
+                                </p>
+                            </div>
+                            <div class="slide">
+                                <h2 class="subtitulo">ESTUDIOS REALIZADOS</h2>
+                                <p class="texto">Introducción en Programación y Desarrollo Web </p>
+                                <p class="texto">Ambos cursados en el Informatorio que depende del Desarrollo de empleo de la provincia del Chaco </p>
+                                <br>
+                                <h2 class="subtitulo">ACTUALMENTE REALIZANDO LOS SIGUIENTES ESTUDIOS</h2>
+                                <p class="texto">Curso de Especialización de la tecnologia en el Informatorio </p>
+                                <p class="texto">Primer año de Tecnicatura Superior en Programación en la Utn de Resitencia-Chaco </p>
+                            </div>
+                            <div class="slide">
+                                <h2 class="subtitulo">CONOCIMIENTOS</h2>
+                                <p class="texto">Java, Python, Djando, MySql, HTML, Css, JavaScript, Boostrap, Git, GitHub</p>
+                            </div>
+
+                        </article>
+                        <div class="botones" id="botones"></div>
+
+                    </section>
+                </section>
+                <section class="redes-sociales">
+                    <a href="https://www.linkedin.com/in/luis-zarate-46569a225/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/luisangel.zarate" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </section>
             </section>
       </div>
-   
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
